@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>😜</title>
+    <meta name="description" content="😜" />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta property="og:image" content="https://maxmx.github.io/o-p/share-emoji.png" />
+    <meta property="og:image:width" content="640" />
+    <meta property="og:image:height" content="320" />
+    <link rel="icon" type="image/png" sizes="16x16" href="emoji.png" />
+  </head>
+  <body style="padding: 2em; font-size: 16px;">
+    <div style="text-align: center;">
+        <textarea id="txt" rows="10" style="width: 100%; font-size: 16px;"></textarea>
+    </div>
+    <div style="text-align: center;">
+        <button 
+            id="btn" 
+            style="font-size: 32px;
+            padding: 8px;
+            background-color: #ffdb0b;
+            border: 2px solid #f3a400;
+            outline: none;
+            border-radius: 16px;
+            line-height: 32px;
+            cursor: pointer;"
+            onclick="convert()"
+        >
+            😜
+        </button>
+    </div>
+    <script>
+        function convert() {
+            var ta = document.getElementById('txt')
+            var a = ta.value;
+            ta.value = a.replace(/o/gi, '😜');
+        }
+    </script>
+  </body>
+</html>
